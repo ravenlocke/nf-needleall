@@ -9,4 +9,4 @@ This workflow can be called like so:
 nextflow run ravenlocke/nf-needleall --query {query_file.fasta} --db {database.fasta} --threshold {T} --outroot {root}
 ```
 
-This will find hits in the DB with FASTA records in the query, which are then written out to a file in the directory from which you ran the command, named `{root}_identities.txt`. If `--threhold` is given, only hits with an identity >= {T} are returned.
+This will find hits in the DB with FASTA records in the query, which are then written out to a file in the directory from which you ran the command, named `{root}_identities.txt`. `--threhold {T}` can be omitted (which will return all hits with some identity), but if given then only hits with an identity >= `{T}` are returned.
