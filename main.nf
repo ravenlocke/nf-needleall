@@ -46,7 +46,7 @@ process exposeData {
 }
 
 fragmented_db = fragment_db
-	.splitFasta(by: 100, file: true)
+	.splitFasta(by: 1000, file: true)
 
 
 process needleall {
